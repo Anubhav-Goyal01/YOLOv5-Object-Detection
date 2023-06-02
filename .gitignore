@@ -17,6 +17,7 @@ eggs/
 lib/
 lib64/
 parts/
+yolov5
 sdist/
 var/
 wheels/
