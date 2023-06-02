@@ -1,0 +1,9 @@
+path: /content/Data 
+train: /content/Data/images/train  
+val: /content/Data/images/val
+
+nc: 3
+names:
+  0: deer
+  1: sheep
+  2: dog
