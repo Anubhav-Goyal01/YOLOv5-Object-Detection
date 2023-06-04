@@ -6,26 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Object detection</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'styles.css')}}">
 </head>
-
 <body>
 
-
-    <form class="" method="POST" enctype=multipart/form-data name="form1">
-        <h1 class="">Upload any image or video</h1>
-        <input type="file" name="file" class="" id="inputfile">
-        <br />
-        <button class="" type="submit">Upload</button>
-    </form>
-
-    <br>
-    <h1>Detection Result</h1>
-    
-    {% if image_path %}
-    <img src="{{ url_for('display', filename = image_path) }}"
-    {% else %}
-        <p>No image detected yet.</p>
-    {% endif %}
+    <div class="container">
+        <div class="form-container">
+            <form class="form" method="POST" enctype=multipart/form-data name="form1">
+                <h1 class="heading">Upload Image</h1>
+                <div class="input">
+                    <input type="file" name="file" class="file-input" id="inputfile">
+                    <button class="btn" type="submit">Upload</button>
+                </div>
+            </form>
+        </div>
+        <div class="detection-container">
+            <h1 class="heading">Detection Result</h1>
+            
+            {% if image_path %}
+            <img src="{{ url_for('display', filename = image_path) }}" class="img">
+            {% else %}
+            <p class="no-img-text">No image detected yet.</p>
+            {% endif %}
+        </div>
+</div>
 
 </body>
 
