@@ -1,7 +1,11 @@
 # YOLOv5 Object Detection
 
-This project demonstrates the end-to-end workflow of training and using the YOLOv5 model for object detection tasks. It provides instructions on running the project both on Google Colab and locally.
+This project demonstrates the end-to-end workflow of training and using the YOLOv5 model for object detection tasks. It provides instructions on running the notebook both on Google Colab and locally as well as running the flask server and making predictions from the UI
 
+
+<img src="static/preview.png" alt= "preview">
+
+# Running Jupyter Notebook
 ## Running on Google Colab
 
 1. Clone the repository.
@@ -22,3 +26,9 @@ By following these steps, you will be able to train and use the YOLOv5 model for
 Please note that the `dataset.yaml` file contains the necessary configuration for your dataset, including paths, class labels, and number of classes. Make sure to customize it to match your dataset structure and requirements.
 
 Feel free to refer to the notebook for more detailed instructions and explanations throughout the training and inference processes.
+
+
+# Running server
+
+1. Clone the repository.
+2. Navigate to the current folder and run app.py
